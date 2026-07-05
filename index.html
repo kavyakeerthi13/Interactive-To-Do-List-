@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Smart To-Do List</h1>
+    <p id="date"></p>
+    <p id="greeting"></p>
+  </header>
+
+  <!-- Main Body -->
+  <main>
+    <!-- Add Task Section -->
+    <section class="box">
+      <h2>Add New Task</h2>
+      <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Enter a task...">
+        <input type="date" id="dueDate">
+        <button onclick="addTask()">➕ Add</button>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="box">
+      <h2>📊 Task Stats</h2>
+      <p>Total: <span id="total">0</span></p>
+      <p>Completed: <span id="completed">0</span></p>
+      <p>Pending: <span id="pending">0</span></p>
+    </section>
+
+    <!-- Task List Section -->
+    <section class="box">
+      <h2>📝 Tasks</h2>
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- History Section -->
+    <section class="box">
+      <h2>📂 History (Completed)</h2>
+      <ul id="historyList"></ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>✨ Stay Organized || Stay Smart ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
